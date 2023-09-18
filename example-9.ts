@@ -8,7 +8,7 @@
 import { Kaiju, KaijuType } from './example-8';
 // Fix the rampage function so it makes use of the KaijuType enum
 
-function rampage(kaiju, city) {
+function rampage(kaiju: Kaiju, city: string) {
   const { name, type, power } = kaiju;
   let action: string;
   switch (type) {
@@ -32,6 +32,8 @@ const gojira = new Kaiju('Gojira', 90, KaijuType.Lizard);
 // Define two more monsters
 const mothra = new Kaiju('Mothra', 80, KaijuType.Flying);
 const kong = new Kaiju('Kong', 70, KaijuType.Ape);
+
+
 
 console.log(rampage(gojira, 'tokyo'));
 // Set the new monsts to rampage in a city
