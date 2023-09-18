@@ -10,7 +10,7 @@ const answer = getPriceWithTax(23.99, 9.5)
 console.log(answer)
 
 // Run the code here and look at the results
-// Does it look right? 
+// Does it look right?
 // What went wrong?
-
+// It is wrong because the price is a string and the tax is a number.
 
